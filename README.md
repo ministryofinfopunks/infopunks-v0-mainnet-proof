@@ -23,24 +23,39 @@ Canonical live proof surfaces
 Specific receipt IDs are generated per paid call and may rotate after redeploy while v0 uses in-memory receipt/event storage. The stable proof targets are the public proof indexes, recent event feeds, receipt lookup templates, discovery manifests, and OpenAPI specs.
 
 Trust Layer:
+
 https://infopunks-x402-adapter-cdp-staging.onrender.com/proof
+
 https://infopunks-x402-adapter-cdp-staging.onrender.com/v1/events/recent
+
 https://infopunks-x402-adapter-cdp-staging.onrender.com/receipts/{receipt_id}
+
 https://infopunks-x402-adapter-cdp-staging.onrender.com/.well-known/infopunks-trust-layer.json
+
 https://infopunks-x402-adapter-cdp-staging.onrender.com/openapi.json
 
 Cognition Layer:
+
 https://infopunks-cognition-layer-x402.onrender.com/proof
+
 https://infopunks-cognition-layer-x402.onrender.com/v1/events/recent
+
 https://infopunks-cognition-layer-x402.onrender.com/receipts/{receipt_id}
+
 https://infopunks-cognition-layer-x402.onrender.com/.well-known/infopunks-cognition-layer.json
+
 https://infopunks-cognition-layer-x402.onrender.com/openapi.json
 
 Passport Layer:
+
 https://infopunks-passport-layer.onrender.com/proof
+
 https://infopunks-passport-layer.onrender.com/v1/events/recent
+
 https://infopunks-passport-layer.onrender.com/receipts/{receipt_id}
+
 https://infopunks-passport-layer.onrender.com/.well-known/infopunks-passport-layer.json
+
 https://infopunks-passport-layer.onrender.com/openapi.json
 
 
