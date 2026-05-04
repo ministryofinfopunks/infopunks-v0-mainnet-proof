@@ -1,5 +1,5 @@
 {
-  "receipt_id": "rcpt_f9b215d4-b39a-4217-8660-72329493adc8",
+  "receipt_id": "{receipt_id}",
   "tool_id": "extract_signal",
   "endpoint": "/v1/extract-signal",
   "final_status": 200,
@@ -10,7 +10,7 @@
   "payTo": "0xe4E8908308a86aB43E5dEb6C0fd0F006786104c3",
   "result_hash": "5a6c5da637d6da488e42e09023bb9d8048294458c05968a758c2c6b03e528cf5",
   "created_at": "2026-05-04T07:35:24.770Z",
-  "proof_url": "https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_f9b215d4-b39a-4217-8660-72329493adc8",
+  "proof_url": "https://infopunks-cognition-layer-x402.onrender.com/proof",
   "settlement_reference": "0x35505610af00a441232555b96a01e190f29c28460b32cd839756979d0c42e138",
   "settlement_status": "settled"
 }

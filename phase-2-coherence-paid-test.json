@@ -1,5 +1,5 @@
 {
-  "receipt_id": "rcpt_263b4835-42ad-46a2-923b-a1369560cd2e",
+  "receipt_id": "{receipt_id}",
   "tool_id": "score_coherence",
   "endpoint": "/v1/coherence-score",
   "final_status": 200,
@@ -10,7 +10,7 @@
   "payTo": "0xe4E8908308a86aB43E5dEb6C0fd0F006786104c3",
   "result_hash": "9d7dfe2e6415b4ad74557b9eaeacfa0b8a6fcf1fdd52b3bb0abb9efc7255968b",
   "created_at": "2026-05-04T07:35:22.194Z",
-  "proof_url": "https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_263b4835-42ad-46a2-923b-a1369560cd2e",
+  "proof_url": "https://infopunks-cognition-layer-x402.onrender.com/proof",
   "settlement_reference": "0x92ff7c32fba931a48fd5c7d54d80a5ebb39befb74cba68bc0195ce4629e4470c",
   "settlement_status": "settled"
 }

@@ -1,6 +1,6 @@
 {
   "project": "Infopunks Trust Layer",
-  "receipt_id": "xrc_9c23e3d1-5abc-4d9f-b41e-635be9e0f1bf",
+  "receipt_id": "{receipt_id}",
   "event_type": "paid_call.success",
   "event": "paid_call.success",
   "status": "allow",
