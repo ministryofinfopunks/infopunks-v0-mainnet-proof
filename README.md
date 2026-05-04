@@ -1,209 +1,243 @@
-INFOPUNKS v0 MAINNET PROOF INDEX
-Generated: 2026-05-04
+# Infopunks v0 Mainnet Proof
 
-Status:
-Phase 1: Trust + Proof - CONFIRMED
-Phase 2: Coherence + Signal - CONFIRMED
-Phase 3: Passport + Routing - CONFIRMED
+Canonical public proof directory for the Infopunks v0 x402-paid machine-callable stack on Base.
 
-Network:
-Base mainnet / eip155:8453
+## Live System
 
-Asset:
-USDC
+```text
+Network: Base mainnet
+Network CAIP-2: eip155:8453
+Asset: USDC
+Facilitator: CDP x402
+PayTo: 0xe4E8908308a86aB43E5dEb6C0fd0F006786104c3
+Confirmed Phases
+Phase 1: Trust + Proof        CONFIRMED
+Phase 2: Coherence + Signal   CONFIRMED
+Phase 3: Passport + Routing   CONFIRMED
+```
 
-Facilitator:
-CDP
+## Canonical Live Proof Surfaces
 
-PayTo:
-0xe4E8908308a86aB43E5dEb6C0fd0F006786104c3
+Specific receipt IDs are generated per paid call and may rotate after redeploy while v0 uses in-memory receipt/event storage.
 
-Canonical live proof surfaces
+The stable proof targets are:
 
-Specific receipt IDs are generated per paid call and may rotate after redeploy while v0 uses in-memory receipt/event storage. The stable proof targets are the public proof indexes, recent event feeds, receipt lookup templates, discovery manifests, and OpenAPI specs.
+- public proof indexes
+- recent event feeds
+- receipt lookup templates
+- discovery manifests
+- OpenAPI specs
 
 Trust Layer:
 
+```text
 https://infopunks-x402-adapter-cdp-staging.onrender.com/proof
-
 https://infopunks-x402-adapter-cdp-staging.onrender.com/v1/events/recent
-
 https://infopunks-x402-adapter-cdp-staging.onrender.com/receipts/{receipt_id}
-
 https://infopunks-x402-adapter-cdp-staging.onrender.com/.well-known/infopunks-trust-layer.json
-
 https://infopunks-x402-adapter-cdp-staging.onrender.com/openapi.json
+```
 
 Cognition Layer:
 
+```text
 https://infopunks-cognition-layer-x402.onrender.com/proof
-
 https://infopunks-cognition-layer-x402.onrender.com/v1/events/recent
-
 https://infopunks-cognition-layer-x402.onrender.com/receipts/{receipt_id}
-
 https://infopunks-cognition-layer-x402.onrender.com/.well-known/infopunks-cognition-layer.json
-
 https://infopunks-cognition-layer-x402.onrender.com/openapi.json
+```
 
 Passport Layer:
 
+```text
 https://infopunks-passport-layer.onrender.com/proof
-
 https://infopunks-passport-layer.onrender.com/v1/events/recent
-
 https://infopunks-passport-layer.onrender.com/receipts/{receipt_id}
-
 https://infopunks-passport-layer.onrender.com/.well-known/infopunks-passport-layer.json
-
 https://infopunks-passport-layer.onrender.com/openapi.json
+```
 
+## Phase 1: Trust Layer
 
-PHASE 1: TRUST + PROOF
 Service:
-Infopunks Trust Layer
 
-Live URL:
+```text
 https://infopunks-x402-adapter-cdp-staging.onrender.com
+```
 
-Endpoint:
+Paid resource:
+
+```text
 POST /v1/resolve-trust
+```
 
-Receipt lookup template:
-https://infopunks-x402-adapter-cdp-staging.onrender.com/receipts/{receipt_id}
+Live proof:
 
-Proof:
+```text
 https://infopunks-x402-adapter-cdp-staging.onrender.com/proof
+```
 
-Recent Events:
+Recent events:
+
+```text
 https://infopunks-x402-adapter-cdp-staging.onrender.com/v1/events/recent
+```
 
-OpenAPI:
-https://infopunks-x402-adapter-cdp-staging.onrender.com/openapi.json
+Receipt lookup template:
 
-Manifest:
+```text
+https://infopunks-x402-adapter-cdp-staging.onrender.com/receipts/{receipt_id}
+```
+
+Discovery manifest:
+
+```text
 https://infopunks-x402-adapter-cdp-staging.onrender.com/.well-known/infopunks-trust-layer.json
-
-Result:
-x402 verified through CDP on Base mainnet
-Final status: 200
-Settlement status: provisional
-Bazaar metadata status: included
-External Bazaar acceptance: pending_confirmation
-
-
-PHASE 2: COGNITION LAYER
-Service:
-Infopunks Cognition Layer
-
-Live URL:
-https://infopunks-cognition-layer-x402.onrender.com
-
-Endpoint:
-POST /v1/coherence-score
-
-Receipt lookup template:
-https://infopunks-cognition-layer-x402.onrender.com/receipts/{receipt_id}
-
-Proof Index:
-https://infopunks-cognition-layer-x402.onrender.com/proof
-
-Recent Events:
-https://infopunks-cognition-layer-x402.onrender.com/v1/events/recent
-
-Settlement:
-settled
-
-Endpoint:
-POST /v1/extract-signal
-
-Receipt lookup template:
-https://infopunks-cognition-layer-x402.onrender.com/receipts/{receipt_id}
-
-Proof Index:
-https://infopunks-cognition-layer-x402.onrender.com/proof
-
-Recent Events:
-https://infopunks-cognition-layer-x402.onrender.com/v1/events/recent
-
-Settlement:
-settled
-
-Endpoint:
-POST /v1/simulate-narrative
-
-Receipt lookup template:
-https://infopunks-cognition-layer-x402.onrender.com/receipts/{receipt_id}
-
-Proof Index:
-https://infopunks-cognition-layer-x402.onrender.com/proof
-
-Recent Events:
-https://infopunks-cognition-layer-x402.onrender.com/v1/events/recent
-
-Settlement:
-settled
+```
 
 OpenAPI:
-https://infopunks-cognition-layer-x402.onrender.com/openapi.json
 
-Manifest:
-https://infopunks-cognition-layer-x402.onrender.com/.well-known/infopunks-cognition-layer.json
-
-Proof Index:
-https://infopunks-cognition-layer-x402.onrender.com/proof
-
-Result:
-/v1/coherence-score: paid, x402 verified, settled
-/v1/extract-signal: paid, x402 verified, settled
-/v1/simulate-narrative: paid, x402 verified, settled
-All three calls return receipt metadata, result hash, proof URL, settlement reference, and public events.
-
-
-PHASE 3: PASSPORT + ROUTING
-Service:
-Infopunks Passport Layer
-
-Live URL:
-https://infopunks-passport-layer.onrender.com
-
-Endpoint:
-POST /v1/route-agent
-
-Receipt lookup template:
-https://infopunks-passport-layer.onrender.com/receipts/{receipt_id}
-
-Proof:
-https://infopunks-passport-layer.onrender.com/proof
-
-Recent Events:
-https://infopunks-passport-layer.onrender.com/v1/events/recent
-
-OpenAPI:
-https://infopunks-passport-layer.onrender.com/openapi.json
-
-Manifest:
-https://infopunks-passport-layer.onrender.com/.well-known/infopunks-passport-layer.json
-
-Result:
-/v1/route-agent: paid, x402 verified, route decision returned
-Decision: route
-Selected agent example: agent_b
-Discovery metadata includes resource, routeTemplate, pricing, network, asset, and payTo for all paid Passport resources.
-
-
-SUMMARY
-Infopunks v0 has shipped three paid x402 primitives on Base:
-
-1. resolve_trust
-2. score_coherence / extract_signal / simulate_narrative
-3. route_agent
-
-Together:
-Trust Layer       -> who can be trusted?
-Cognition Layer   -> what signal matters?
-Narrative Layer   -> where is this going?
-Passport Layer    -> which agent should act next?
+```text
+https://infopunks-x402-adapter-cdp-staging.onrender.com/openapi.json
+```
 
 Status:
-v0 mainnet proof complete.
+
+- x402 verified through CDP on Base mainnet
+- Final status: 200
+- Settlement status: provisional
+- Bazaar metadata status: included
+- External Bazaar acceptance: pending_confirmation
+
+## Phase 2: Cognition Layer
+
+Service:
+
+```text
+https://infopunks-cognition-layer-x402.onrender.com
+```
+
+Paid resources:
+
+```text
+POST /v1/coherence-score
+POST /v1/extract-signal
+POST /v1/simulate-narrative
+```
+
+Live proof:
+
+```text
+https://infopunks-cognition-layer-x402.onrender.com/proof
+```
+
+Recent events:
+
+```text
+https://infopunks-cognition-layer-x402.onrender.com/v1/events/recent
+```
+
+Receipt lookup template:
+
+```text
+https://infopunks-cognition-layer-x402.onrender.com/receipts/{receipt_id}
+```
+
+Discovery manifest:
+
+```text
+https://infopunks-cognition-layer-x402.onrender.com/.well-known/infopunks-cognition-layer.json
+```
+
+OpenAPI:
+
+```text
+https://infopunks-cognition-layer-x402.onrender.com/openapi.json
+```
+
+Status:
+
+- /v1/coherence-score: paid, x402 verified, settled
+- /v1/extract-signal: paid, x402 verified, settled
+- /v1/simulate-narrative: paid, x402 verified, settled
+
+All three Cognition calls return receipt metadata, result hash, proof URL, settlement reference, and public events.
+
+## Phase 3: Passport Layer
+
+Service:
+
+```text
+https://infopunks-passport-layer.onrender.com
+```
+
+Paid resources:
+
+```text
+POST /v1/passport/register
+POST /v1/passport/attest
+POST /v1/verify-claim
+POST /v1/route-agent
+```
+
+Live proof:
+
+```text
+https://infopunks-passport-layer.onrender.com/proof
+```
+
+Recent events:
+
+```text
+https://infopunks-passport-layer.onrender.com/v1/events/recent
+```
+
+Receipt lookup template:
+
+```text
+https://infopunks-passport-layer.onrender.com/receipts/{receipt_id}
+```
+
+Discovery manifest:
+
+```text
+https://infopunks-passport-layer.onrender.com/.well-known/infopunks-passport-layer.json
+```
+
+OpenAPI:
+
+```text
+https://infopunks-passport-layer.onrender.com/openapi.json
+```
+
+Status:
+
+- /v1/route-agent: paid, x402 verified, route decision returned
+- Decision: route
+- Selected agent example: agent_b
+- Discovery metadata includes resource, routeTemplate, pricing, network, asset, and payTo for all paid Passport resources.
+
+## Proof Model
+
+This repo does not pin concrete receipt IDs because v0 receipt/event storage may reset after redeploy.
+
+Instead, it points to stable machine-readable proof surfaces:
+
+```text
+/proof
+/v1/events/recent
+/receipts/{receipt_id}
+/.well-known/...
+/openapi.json
+```
+
+## Status
+
+Infopunks v0 mainnet proof is confirmed across three paid machine-callable layers:
+
+- Trust Layer: resolves trust before agents act
+- Cognition Layer: turns narrative and market noise into machine-usable signal
+- Passport Layer: verifies identity/claims and routes agents
+
+All phases are exposed as public x402-paid resources on Base using USDC and CDP x402.
