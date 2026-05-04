@@ -10,6 +10,9 @@ Network CAIP-2: eip155:8453
 Asset: USDC
 Facilitator: CDP x402
 PayTo: 0xe4E8908308a86aB43E5dEb6C0fd0F006786104c3
+```
+
+```text
 Confirmed Phases
 Phase 1: Trust + Proof        CONFIRMED
 Phase 2: Coherence + Signal   CONFIRMED
