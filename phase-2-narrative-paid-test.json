@@ -1,0 +1,16 @@
+{
+  "receipt_id": "rcpt_532d4af1-c1b4-48f8-84c4-174323f85116",
+  "tool_id": "simulate_narrative",
+  "endpoint": "/v1/simulate-narrative",
+  "final_status": 200,
+  "x402_verified": true,
+  "facilitator_provider": "cdp",
+  "network": "eip155:8453",
+  "asset": "USDC:0x833589fCD6eDb6E08f4c7c32D4f71b54bdA02913",
+  "payTo": "0xe4E8908308a86aB43E5dEb6C0fd0F006786104c3",
+  "result_hash": "b817d0a36a5e946ed99a66f49303bd80b439309f03b2f37dce555cbfed36e98e",
+  "created_at": "2026-05-04T07:35:26.853Z",
+  "proof_url": "https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_532d4af1-c1b4-48f8-84c4-174323f85116",
+  "settlement_reference": "0xe603fc1db93adbac3104b165622e7baf3c71cf41ed800043264accc552c1da00",
+  "settlement_status": "settled"
+}

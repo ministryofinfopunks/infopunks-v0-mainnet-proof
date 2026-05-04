@@ -1,0 +1,13 @@
+{
+  "receipt_id": "xrc_da0db29e-8f12-4f85-9f09-22da5030c975",
+  "endpoint": "/v1/route-agent",
+  "paid_resource": "/v1/route-agent",
+  "timestamp": "2026-05-04T07:38:32.656Z",
+  "input_hash": "cd35157d4383acb9d55529ce9b5bc68c6a3230a68d05799a951ab5d6a67152a6",
+  "output_hash": "6ee4df83d433facb0309b708e829e0e4bad8135f1a9e4e5858790f2531bac580",
+  "x402_verified": true,
+  "network": "eip155:8453",
+  "asset": "USDC",
+  "facilitator_provider": "cdp",
+  "status": 200
+}

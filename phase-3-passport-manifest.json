@@ -1,0 +1,45 @@
+{
+  "name": "Infopunks Passport Layer",
+  "description": "Machine-readable identity, claim hygiene, and routing for agents.",
+  "resources": {
+    "passport_register": {
+      "method": "POST",
+      "path": "/v1/passport/register",
+      "url": "https://infopunks-passport-layer.onrender.com/v1/passport/register",
+      "description": "Register a machine-readable Passport for an agent, wallet, endpoint, human, or project."
+    },
+    "passport_attest": {
+      "method": "POST",
+      "path": "/v1/passport/attest",
+      "url": "https://infopunks-passport-layer.onrender.com/v1/passport/attest",
+      "description": "Attach evidence or attestations to an existing Passport."
+    },
+    "verify_claim": {
+      "method": "POST",
+      "path": "/v1/verify-claim",
+      "url": "https://infopunks-passport-layer.onrender.com/v1/verify-claim",
+      "description": "Verify whether a claim is supported, weak, disputed, outdated, or narratively risky."
+    },
+    "route_agent": {
+      "method": "POST",
+      "path": "/v1/route-agent",
+      "url": "https://infopunks-passport-layer.onrender.com/v1/route-agent",
+      "description": "Select the best agent for a task based on trust, domain fit, budget, and risk tolerance."
+    }
+  },
+  "extensions": {
+    "bazaar": {
+      "compatibility": [
+        "x402",
+        "agentic-market",
+        "bazaar"
+      ],
+      "paid_resources": [
+        "/v1/passport/register",
+        "/v1/passport/attest",
+        "/v1/verify-claim",
+        "/v1/route-agent"
+      ]
+    }
+  }
+}
