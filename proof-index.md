@@ -30,10 +30,10 @@ Endpoint:
 POST /v1/resolve-trust
 
 Fresh receipt:
-xrc_41855125-159b-4563-82a9-91e05bdfe6cb
+xrc_9c23e3d1-5abc-4d9f-b41e-635be9e0f1bf
 
 Receipt:
-https://infopunks-x402-adapter-cdp-staging.onrender.com/receipts/xrc_41855125-159b-4563-82a9-91e05bdfe6cb
+https://infopunks-x402-adapter-cdp-staging.onrender.com/receipts/xrc_9c23e3d1-5abc-4d9f-b41e-635be9e0f1bf
 
 Proof:
 https://infopunks-x402-adapter-cdp-staging.onrender.com/proof
@@ -49,6 +49,8 @@ x402 verified: true
 Final status: 200
 Settlement status: provisional
 Verification level: application_receipt_pending_tx_hash
+Bazaar metadata status: included
+External Bazaar acceptance: pending_confirmation
 
 
 PHASE 2: COGNITION LAYER
@@ -62,10 +64,13 @@ Endpoint:
 POST /v1/coherence-score
 
 Fresh receipt:
-rcpt_c964f4f1-f9b5-43a0-ad4a-c81a069edb41
+rcpt_263b4835-42ad-46a2-923b-a1369560cd2e
+
+Receipt:
+https://infopunks-cognition-layer-x402.onrender.com/receipts/rcpt_263b4835-42ad-46a2-923b-a1369560cd2e
 
 Proof:
-https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_c964f4f1-f9b5-43a0-ad4a-c81a069edb41
+https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_263b4835-42ad-46a2-923b-a1369560cd2e
 
 Settlement:
 settled
@@ -74,10 +79,13 @@ Endpoint:
 POST /v1/extract-signal
 
 Fresh receipt:
-rcpt_347e1ead-1ee0-4c7e-8eae-68025136d428
+rcpt_f9b215d4-b39a-4217-8660-72329493adc8
+
+Receipt:
+https://infopunks-cognition-layer-x402.onrender.com/receipts/rcpt_f9b215d4-b39a-4217-8660-72329493adc8
 
 Proof:
-https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_347e1ead-1ee0-4c7e-8eae-68025136d428
+https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_f9b215d4-b39a-4217-8660-72329493adc8
 
 Settlement:
 settled
@@ -86,10 +94,13 @@ Endpoint:
 POST /v1/simulate-narrative
 
 Fresh receipt:
-rcpt_532d4af1-c1b4-48f8-84c4-174323f85116
+rcpt_8a132191-7cc2-4fda-9f88-0215b5d76885
+
+Receipt:
+https://infopunks-cognition-layer-x402.onrender.com/receipts/rcpt_8a132191-7cc2-4fda-9f88-0215b5d76885
 
 Proof:
-https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_532d4af1-c1b4-48f8-84c4-174323f85116
+https://infopunks-cognition-layer-x402.onrender.com/proof/rcpt_8a132191-7cc2-4fda-9f88-0215b5d76885
 
 Settlement:
 settled
@@ -103,6 +114,9 @@ https://infopunks-cognition-layer-x402.onrender.com/.well-known/infopunks-cognit
 Proof Index:
 https://infopunks-cognition-layer-x402.onrender.com/proof
 
+Result:
+All three Cognition calls returned 200, were x402 verified through CDP on Base mainnet, and include settled receipt references.
+
 
 PHASE 3: PASSPORT + ROUTING
 Service:
@@ -115,10 +129,10 @@ Endpoint:
 POST /v1/route-agent
 
 Fresh receipt:
-xrc_da0db29e-8f12-4f85-9f09-22da5030c975
+xrc_7ac41db8-b3a4-447c-b871-bb8a60289755
 
 Receipt:
-https://infopunks-passport-layer.onrender.com/receipts/xrc_da0db29e-8f12-4f85-9f09-22da5030c975
+https://infopunks-passport-layer.onrender.com/receipts/xrc_7ac41db8-b3a4-447c-b871-bb8a60289755
 
 Proof:
 https://infopunks-passport-layer.onrender.com/proof
@@ -134,6 +148,7 @@ x402 verified: true
 Final status: 200
 Decision: route
 Selected agent: agent_b
+Discovery metadata includes resource, routeTemplate, pricing, network, asset, and payTo for all paid Passport resources.
 
 
 SUMMARY
